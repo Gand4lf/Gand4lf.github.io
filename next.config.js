@@ -3,10 +3,16 @@ const nextConfig = {
     output: 'export',
     images: {
         unoptimized: true,
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: '**',
+            },
+        ],
     },
     basePath: '/Gand4lf.github.io',
-    assetPrefix: '/Gand4lf.github.io/',
-    trailingSlash: true
+    assetPrefix: '/Gand4lf.github.io',
+    trailingSlash: true,
 }
 
 module.exports = nextConfig
