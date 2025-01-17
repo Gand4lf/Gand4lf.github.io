@@ -11,6 +11,7 @@ import { projects, websiteDesigns } from "@/data"
 import { Button } from "@/components/ui/button"
 import { ThemeToggle } from "@/components/ui/theme-toggle"
 
+
 export default function Home() {
     const [selectedProject, setSelectedProject] = useState<Project | null>(null)
     const PROJECTS_PER_PAGE = 6
