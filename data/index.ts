@@ -7,7 +7,7 @@ export const projects: Project[] = [
         description: "Designed and implemented a custom query language for a graph database. Currently expanding into database engine development.",
         longDescription: "For this project I built a query language for a graph database a friend and I are working on. My primary contribution so far has been designing and implementing the query language, and I plan to expand into the database engine side of the project soon.",
         technologies: ["Rust", "Database Design", "Query Languages"],
-        images: ["@/public/projects/helix-logo.png"],
+        images: ["/projects/helix-logo.png"],
     },
     {
         title: "Construction Management Tool",
