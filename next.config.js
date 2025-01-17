@@ -4,8 +4,9 @@ const nextConfig = {
     images: {
         unoptimized: true,
     },
-    assetPrefix: '/',
-    basePath: '/Gand4lf.github.io'
+    basePath: '/Gand4lf.github.io',
+    assetPrefix: '/Gand4lf.github.io/',
+    trailingSlash: true
 }
 
 module.exports = nextConfig
