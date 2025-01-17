@@ -1,11 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    output: 'export',
+    output: "export",  // <=== enables static exports
+    reactStrictMode: true,
     images: {
         unoptimized: true,
     },
-    assetPrefix: './',
-    basePath: '/<your-repo-name>',
+    distDir: 'docs',
 };
 
 module.exports = nextConfig;
