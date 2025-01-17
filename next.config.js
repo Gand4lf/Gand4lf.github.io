@@ -1,10 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     output: 'export',
-    basePath: '/Gand4lf.github.io',
     images: {
         unoptimized: true,
     },
-}
+    assetPrefix: '/gand4lf.github.io/',
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
