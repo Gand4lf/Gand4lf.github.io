@@ -10,8 +10,8 @@ const nextConfig = {
             },
         ],
     },
-    basePath: '/Gand4lf.github.io',
-    assetPrefix: '/Gand4lf.github.io',
+    basePath: '',
+    assetPrefix: '',
     trailingSlash: true,
 }
 
