@@ -4,7 +4,7 @@ const nextConfig = {
     images: {
         unoptimized: true,
     },
-    assetPrefix: '/gand4lf.github.io/',
+    assetPrefix: 'https://gand4lf.github.io/',
     basePath: '/gand4lf.github.io',
 };
 
