@@ -55,6 +55,13 @@ export const projects: Project[] = [
         longDescription: "This was my first major project. I developed a smart home system that could track the number of people in different rooms using custom-built laser tripwires and manage the electrical consumption of those rooms accordingly. I also created a virtual assistant, similar to Alexa or Google Home, which I designed and implemented from scratch.",
         technologies: ["Raspberry Pi", "Python", "Linux"],
     },
+    {
+        title: "Laser Tripwire System",
+        date: "2020",
+        description: "Built a discrete laser tripwire system to track movements through a doorway.",
+        longDescription: "Built a discrete laser tripwire system to track movements through a doorway. I learnt a lot about hardware and software integration during this project. I used a Raspberry Pi to connect the lasers and Light Detecting Resistors (LDRs). I then used a Python script to process the data, calculate the direction of movement and track which way people were moving through the doorway.",
+        technologies: ["Raspberry Pi", "Electrical & Electronic Engineering"],
+    },
 ]
 
 export const websiteDesigns = [
