@@ -10,6 +10,14 @@ export const projects: Project[] = [
         images: ["/projects/helix-logo.png"],
     },
     {
+        title: "EZ Docs",
+        date: "2025",
+        description: "An AI Agent that generates documentation for your codebase.",
+        longDescription: "Built a VS Code extention that uses an AI Agent to generate documentation for your codebase.",
+        technologies: ["o3-mini", "Typescript", "AI"],
+        images: ["/projects/EZDocs-white.png"],
+    },
+    {
         title: "Construction Management Tool",
         date: "2024 - 2025",
         description: "Leading front-end development in a team of five, building a management tool for a construction company. Mentoring team members on React Native for mobile development.",
