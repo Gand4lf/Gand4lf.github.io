@@ -2,6 +2,8 @@ import { Project } from "@/types"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
 import Image from "next/image"
+import { Star } from "lucide-react"
+import { cn } from "@/lib/utils"
 
 interface ProjectCardProps {
     project: Project
@@ -11,10 +13,20 @@ interface ProjectCardProps {
 export function ProjectCard({ project, onClick }: ProjectCardProps) {
     return (
         <Card
-            className="cursor-pointer hover:shadow-lg transition-shadow"
+            className={cn(
+                "cursor-pointer hover:shadow-lg transition-shadow relative",
+                project.starred && [
+                    "border-2 border-transparent",
+                    "before:absolute before:inset-[-2px] before:rounded-xl before:animate-shimmer",
+                    "before:bg-[length:200%_100%]",
+                    "before:bg-gradient-to-r before:from-yellow-600 before:via-yellow-300 before:to-yellow-600",
+                    "after:absolute after:inset-[-2px] after:rounded-[10px] after:bg-background",
+                    "after:m-[2px]"
+                ]
+            )}
             onClick={onClick}
         >
-            <CardContent className="p-6 space-y-4">
+            <CardContent className="p-6 space-y-4 relative z-10">
                 <div className="flex gap-4">
                     {project.images?.[0] && (
                         <div className="relative h-32 w-32 flex-shrink-0 rounded-lg overflow-hidden">
@@ -41,6 +53,11 @@ export function ProjectCard({ project, onClick }: ProjectCardProps) {
                         <Badge key={tech} variant="secondary">{tech}</Badge>
                     ))}
                 </div>
+                {project.starred && (
+                    <div className="absolute bottom-3 right-3">
+                        <Star className="w-5 h-5 fill-amber-500 text-amber-500" />
+                    </div>
+                )}
             </CardContent>
         </Card>
     )

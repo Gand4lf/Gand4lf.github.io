@@ -60,10 +60,15 @@ module.exports = {
                 scroll: {
                     from: { transform: "translateX(0)" },
                     to: { transform: "translateX(calc(-50% - 1rem))" },
+                },
+                shimmer: {
+                    '0%': { backgroundPosition: '200% 0' },
+                    '100%': { backgroundPosition: '-200% 0' },
                 }
             },
             animation: {
                 scroll: "scroll var(--animation-duration) linear infinite",
+                shimmer: 'shimmer 6s ease-in-out infinite',
             },
             fontFamily: {
                 sans: ["var(--font-sans)", ...fontFamily.sans],
