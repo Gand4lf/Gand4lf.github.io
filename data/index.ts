@@ -26,6 +26,13 @@ export const projects: Project[] = [
         images: ["/projects/construction-logo.png"],
     },
     {
+        title: "Deep Research Slack Bot",
+        date: "2025",
+        description: "A slack bot that lets you use OpenAI's Deep Research inside a Slack channel.",
+        longDescription: "A slack bot that lets you use OpenAI's Deep Research inside a Slack channel. I built this to allow users in Europe to use OpenAI's Deep Research by using an open-source copy that also let teams of people see and colaoborate on the same research.",
+        technologies: ["Slack", "TypeScript", "OpenAI"]
+    },
+    {
         title: "BlackBook",
         date: "2024",
         description: "Built a personal interaction logging app in a day to help track meetings and connections. Widely adopted by family and friends.",
